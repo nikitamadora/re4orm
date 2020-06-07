@@ -1,24 +1,58 @@
 body {
-  color: #333
+  color: #333;
+  font-family: Helvetica, sans-serif;
 }
 
 a {
   color: #f8f8ff;
+  text-decoration: none;
 }
 
 header {
   background-color: #333;
   height: 400px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-  clip-path: polygon(0 0, 100% 0, 1600px 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 2400px 100%, 0 90%);
 }
 
+.button-active {
+  background-color: rgb(51, 232, 165);
+}
+
+/** ---------------------------- NAV BAR **/
 nav {
   padding: 20px 50px;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  padding: 15px;
 }
 
 #nav-links {
-  display: inline-block;
   float: right;
   padding: 10px;
+}
+
+#nav-donate-button {
+  border-radius: 5px;
+
+}
+
+#login-button {
+  background: url('/assets/logout.svg');
+  display: inline-block;
+  width: 50px;
+  height: 15px;
+  background-size: 50px 15px;
+  padding: 0 0 0 40px;
+  background-repeat: no-repeat;
+}
+
+/** ---------------------------- HEADER/HERO **/
+#header-title {
+  width: 325px;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid aqua;
 }
