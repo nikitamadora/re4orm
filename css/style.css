@@ -1,6 +1,7 @@
 body {
   color: #333;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 600;
 }
 
 a {
@@ -49,10 +50,35 @@ nav {
   background-repeat: no-repeat;
 }
 
-/** ---------------------------- HEADER/HERO **/
-#header-title {
+/** -------------------------------------------- */
+/** ------------------------------- HEADER/HERO */
+/** ------------------------------------------ */
+#hero-title {
   width: 325px;
   height: 100px;
   margin: 0 auto;
+  margin-top: 68px;
   border: 1px solid aqua;
+}
+
+#hero-date {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+}
+
+#watch-live-button {
+  display: block;
+  width: 96px;
+  height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 22px;
 }
