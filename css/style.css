@@ -107,8 +107,9 @@ nav {
 #welcome-section {
   max-width: 960px;
   border: 1px dotted #333;
-  /* height: 400px; */
-  margin: 0 auto;
+  margin: -96px auto 0;
+  position: relative;
+  z-index: 1;
 }
 
 #welcome-section:after {
@@ -121,6 +122,17 @@ nav {
   width: 320px; 
   height: 112px;
   background-color: rgb(51, 232, 165);
+  padding: 5px;
+}
+
+.raffle-column {
+  display: inline-block;
+  max-width: 100px
+}
+
+#raffle-counter {
+  font-weight: 100;
+  font-size: 36px;
 }
 
 #welcome {
