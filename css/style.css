@@ -1,20 +1,18 @@
 body {
   color: #333;
   font-family: 'Helvetica Neue', sans-serif;
-  font-weight: 600;
 }
 
 a {
-  color: #f8f8ff;
   text-decoration: none;
 }
 
 p {
   color: #888;
   font-family: 'Helvetica Neue', sans-serif;
-  font-weight: 100;
   font-size: 10px;
   line-height: 1.8;
+  margin: 5px 0 0 0;
 }
 
 header {
@@ -34,8 +32,32 @@ h3 {
   margin: 4px 0;
 }
 
+h4 {
+  margin: 0;
+}
+
+/* ----------------------------- BUTTONS */
+.button {
+  border-radius: 2px;
+  text-align: center;
+}
+
 .button-active {
   background-color: rgb(51, 232, 165);
+}
+
+/* -------------------------------- TEXT */
+.sm-text {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.light {
+  color: #f8f8ff;
+}
+
+.dark {
+  color: #555;
 }
 
 /** ---------------------------- NAV BAR **/
@@ -45,17 +67,13 @@ nav {
 }
 
 .nav-link {
+  color: #f8f8ff;
   padding: 15px;
 }
 
 #nav-links {
   float: right;
   padding: 10px;
-}
-
-#nav-donate-button {
-  border-radius: 5px;
-
 }
 
 #login-button {
@@ -95,14 +113,15 @@ nav {
   width: 96px;
   height: 24px;
   margin: 0 auto;
-  text-align: center;
-  text-transform: uppercase;
+  color: #f8f8ff;
   font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
   line-height: 22px;
 }
 
-/** --------------------------------------- */
-/** ------------------------------ WELCOME */
+/** ------------------------------------- */
+/** ---------- WELCOME SECTION ---------- */
 /** ------------------------------------- */
 #welcome-section {
   max-width: 960px;
@@ -118,22 +137,42 @@ nav {
   clear: both;
 }
 
+/* ---------------------------- RAFFLE */
 #raffle {
   width: 320px;
   background-color: rgb(51, 232, 165);
-  padding: 5px;
+  padding: 25px;
 }
 
 .raffle-column {
   display: inline-block;
-  max-width: 100px
+  max-width: 46%;
+}
+
+#raffle-button {
+  display: block;
+  margin: 10px 0 0 0;
+  background-color: rgb(7, 7, 36);
+  height: 30px;
+  line-height: 2.8;
+}
+
+#raffle-column-right {
+  text-align: center;
+  margin: 0 0 0 40px;
 }
 
 #raffle-counter {
+  display: block;
   font-weight: 100;
   font-size: 36px;
 }
 
+.counter-label {
+  margin: 0 10px;
+}
+
+/* -------------------- WELCOME MESSAGE */
 #welcome {
   max-width: 480px;
   /* height: 96px; */
