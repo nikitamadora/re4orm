@@ -37,6 +37,7 @@ h4 {
 }
 
 /* ----------------------------- BUTTONS */
+
 .button {
   border-radius: 2px;
   text-align: center;
@@ -46,7 +47,12 @@ h4 {
   background-color: rgb(51, 232, 165);
 }
 
+.button-inactive {
+  background-color: rgb(37, 37, 80);
+}
+
 /* -------------------------------- TEXT */
+
 .sm-text {
   font-size: 10px;
   text-transform: uppercase;
@@ -86,9 +92,9 @@ nav {
   background-repeat: no-repeat;
 }
 
-/** --------------------------------------- */
-/** -------------------------- HEADER/HERO */
-/** ------------------------------------- */
+
+/** ------------ HEADER/HERO ------------ */
+
 #hero-title {
   width: 325px;
   height: 100px;
@@ -120,12 +126,11 @@ nav {
   line-height: 22px;
 }
 
-/** ------------------------------------- */
 /** ---------- WELCOME SECTION ---------- */
-/** ------------------------------------- */
+
 #welcome-section {
   max-width: 960px;
-  border: 1px dotted #333;
+  /* border: 1px dotted #333; */
   margin: -96px auto 0;
   position: relative;
   z-index: 1;
@@ -138,6 +143,7 @@ nav {
 }
 
 /* ---------------------------- RAFFLE */
+
 #raffle {
   width: 320px;
   background-color: rgb(51, 232, 165);
@@ -173,9 +179,20 @@ nav {
 }
 
 /* -------------------- WELCOME MESSAGE */
+
 #welcome {
   max-width: 480px;
   /* height: 96px; */
-  border: 1px dotted #888;
+  /* border: 1px dotted #888; */
   float: right;
+}
+
+/** ---------- STAGE SECTION ---------- */
+
+.stage-button {
+  display: inline-block;
+  width: 96px;
+  height: 30px;
+  line-height: 2.8;
+  margin: 10px 0;
 }
