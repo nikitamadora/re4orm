@@ -66,10 +66,13 @@ h4 {
   color: #555;
 }
 
+.caps {
+  text-transform: uppercase;
+}
+
 /** ---------------------------- NAV BAR **/
 nav {
   padding: 20px 50px;
-  text-transform: uppercase;
 }
 
 .nav-link {
@@ -110,7 +113,6 @@ nav {
   padding: 10px;
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 100;
-  text-transform: uppercase;
   color: white;
 }
 
@@ -121,7 +123,6 @@ nav {
   margin: 0 auto;
   color: #f8f8ff;
   font-size: 10px;
-  text-transform: uppercase;
   text-decoration: none;
   line-height: 22px;
 }
@@ -189,6 +190,11 @@ nav {
 
 /** ---------- STAGE SECTION ---------- */
 
+#stage-section {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .stage-button {
   display: inline-block;
   width: 96px;
@@ -196,3 +202,62 @@ nav {
   line-height: 2.8;
   margin: 10px 0;
 }
+
+#stage-nav {
+  background-color: rgb(51, 232, 165);
+  padding: 5px 10px;
+}
+
+#stage-header {
+  display: inline-block;
+}
+
+#view-schedule-button {
+  float: right;
+  line-height: 2;
+}
+
+#stage-video {
+  display: inline-block;
+  background-color: aliceblue;
+  width: 580px;
+  height: 320px;
+}
+
+/* ----------------------- CHAT SECTION */
+
+#chat-section {
+  display: inline-block;
+  /* float: right; */
+  background-color: gray;
+  width: 380px;
+  height: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
