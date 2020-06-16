@@ -18,12 +18,12 @@
         <a href='#' class='nav-logo'>
           <img src="/assets/re4orm-nav-logo.png" alt="Re4orm Logo">
         </a>
-        <div id='nav-links' class='caps'>
-          <a href='#' class='nav-link'>Live Video Performances</a>
-          <a href='#' class='nav-link'>The Line Up</a>
-          <a href='#' class='nav-link'>Sponsors</a>
-          <a href='#' class='nav-link button button-active light' id='nav-donate-button'>Donate</a>
-          <a href='#' class='nav-link' id='login-button'>Logout</a>
+        <div id='nav-links'>
+          <a href='#' class='nav-link light caps'>Live Video Performances</a>
+          <a href='#' class='nav-link light caps'>The Line Up</a>
+          <a href='#' class='nav-link light caps'>Sponsors</a>
+          <a href='#' class='nav-link light caps black button button-active' id='nav-donate-button'>Donate</a>
+          <a href='#' class='nav-link light caps' id='login-button'>Logout</a>
         </div>
       </nav>
 
@@ -76,24 +76,35 @@
       </div>
       <div id="stage">
         <div id="stage-nav">
-          <h4 id="stage-header" class='light caps'>Stage One</h4>
-          <span class="light sm-text caps" id="playing-now-header"> | Playing Now: <span id='playing-now'>The Wozzles 15:00 - 16:30</span></span>
-          <span class="light sm-text caps" id="up-next-header"> | Up Next: <span id='up-next'>Nick I Guess 17:00 - 17:30</span></span>
-          <a href="#" class="sm-text light caps" id='view-schedule-button'>View Schedule</a>
+          <h4 id="stage-header" class='light'>Stage One</h4>
+          <span class="light small caps" id="playing-now-header"> | Playing Now: <span id='playing-now'>The Wozzles 15:00 - 16:30</span></span>
+          <span class="light small caps" id="up-next-header"> | Up Next: <span id='up-next'>Nick I Guess 17:00 - 17:30</span></span>
+          <a href="#" class="small light caps" id='view-schedule-button'>View Schedule</a>
         </div>
-        <div id="stage-video">Live</div>
 
-        <div id="chat-section">
-          <div id="chat-history">
-            <div class="chat-post">
-              <div class="chat-avatar"></div>
-              <h5 class="chat-post-title">Optix Solutions</h5>
-              <span>Words</span>
-              <p class="chat-post-content">Words are cool and so is checking out our sponsors!</p>
-              <div class="sponsor-icon"></div>
-            </div>
+        <div class="stage-column">
+          <div class="video-container">
+            <video src="#"></video>
           </div>
         </div>
+
+        <div class='stage-column'>
+  
+          <div id="chat">
+            <div id="chat-history">
+              <div class="chat-post">
+                <div class="chat-avatar"></div>
+                <h5 class="chat-post-title">Optix Solutions</h5>
+                <span>Words</span>
+                <p class="chat-post-content">Words are cool and so is checking out our sponsors!</p>
+                <div class="sponsor-icon"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        
       </div>
     </section>
 
