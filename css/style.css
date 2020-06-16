@@ -3,7 +3,7 @@
 /* ---------------------------- GLOBAL */
 
 .container {
-  max-width: 1400px;
+  max-width: 1316px;
   margin: 0 auto;
   padding: 0 42px;
 }
@@ -15,7 +15,6 @@ body {
 
 a {
   font-size: 12px;
-  font-weight: 700;
   text-decoration: none;
 }
 
@@ -42,7 +41,7 @@ h4 {
 /* ----------------------------- BUTTONS */
 
 .button {
-  border-radius: 2px;
+  border-radius: 3px;
   text-align: center;
 }
 
@@ -74,13 +73,17 @@ h4 {
   letter-spacing: 2px;
 }
 
+.center {
+  text-align: center;
+}
+
 /** ---------------------------- NAV BAR **/
 nav {
   padding: 49px 42px 0;
 }
 
 .nav-logo img {
-  width: 13.07%;
+  width: 172px;
   padding: 5px 0 0 0;
   background-repeat: no-repeat;
 }
@@ -93,7 +96,7 @@ nav {
   color: #fff;
   font-size: 12px;
   font-weight: 600;
-  padding: 13px 39px 0 0;
+  padding: 17px 39px 0 0;
 }
 
 #nav-donate-button {
@@ -118,11 +121,10 @@ nav {
 
 /* TODO Is Header appropriate here, or would class/id='hero' be better? */
 header {
-  /* background-color: #333; */
   background: url('/assets/hero-image.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 760px;
+  padding: 0 0 200px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
   clip-path: polygon(0 0, 100% 0, 2400px 100%, 0 90%);
 }
@@ -166,7 +168,7 @@ header {
 
 #welcome-section {
   max-width: 960px;
-  /* border: 1px dotted #333; */
+  border: 1px dotted #333;
   margin: -96px auto 0;
   position: relative;
   z-index: 1;
@@ -181,14 +183,34 @@ header {
 /* ---------------------------- RAFFLE */
 
 #raffle {
-  width: 320px;
+  width: 37%;
   background-color: #00B47A;
   padding: 25px;
 }
 
+#raffle:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .raffle-column {
-  display: inline-block;
-  max-width: 46%;
+  position: relative;
+  width: 50%;
+  float: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.raffle-column:first-child:after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #10CC90;
+  border-left: 1px solid #239A6B;
 }
 
 #raffle-button {
@@ -197,11 +219,6 @@ header {
   background-color: rgb(7, 7, 36);
   height: 30px;
   line-height: 2.8;
-}
-
-#raffle-column-right {
-  text-align: center;
-  margin: 0 0 0 40px;
 }
 
 #raffle-counter {
@@ -217,7 +234,7 @@ header {
 /* -------------------- WELCOME MESSAGE */
 
 #welcome {
-  max-width: 480px;
+  width: 55%;
   /* height: 96px; */
   /* border: 1px dotted #888; */
   float: right;
