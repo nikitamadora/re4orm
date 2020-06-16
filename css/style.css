@@ -1,3 +1,5 @@
+/* Image tags used at times to make certain elements responsive */
+
 /* ---------------------------- GLOBAL */
 
 .container {
@@ -21,16 +23,6 @@ p {
   font-size: 14px;
   line-height: 1.8;
   margin: 5px 0 0 0;
-}
-
-header {
-  /* background-color: #333; */
-  background: url('/assets/PNG/benjamin-wagner-spOzMzSNcv8-unsplash@2x.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 760px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-  clip-path: polygon(0 0, 100% 0, 2400px 100%, 0 90%);
 }
 
 h2 {
@@ -79,38 +71,65 @@ h4 {
 
 .caps {
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /** ---------------------------- NAV BAR **/
 nav {
-  padding: 20px 42px;
+  padding: 49px 42px 0;
 }
 
-.nav-link {
-  color: #f8f8ff;
-  padding: 15px;
+.nav-logo img {
+  width: 13.07%;
+  padding: 5px 0 0 0;
+  background-repeat: no-repeat;
 }
 
 #nav-links {
   float: right;
-  padding: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 13px 39px 0 0;
+}
+
+#nav-donate-button {
+  display: inline-block;
+  padding: 0;
+  width: 121px;
+  height: 40px;
 }
 
 #login-button {
-  background: url('/assets/SVG/logout.svg');
-  display: inline-block;
-  width: 50px;
-  height: 15px;
-  background-size: 50px 15px;
-  padding: 0 0 0 40px;
+  background: url('/assets/logout-icon.svg');
   background-repeat: no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  background-size: 18px 16px;
+  padding: 0 0 0 20px;
 }
 
 
 /** ------------ HEADER/HERO ------------ */
+
+/* TODO Is Header appropriate here, or would class/id='hero' be better? */
+header {
+  /* background-color: #333; */
+  background: url('/assets/hero-image.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 760px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  clip-path: polygon(0 0, 100% 0, 2400px 100%, 0 90%);
+}
+
 .header-logo {
   text-align: center;
-  padding: 64px 0 0 0;
+  padding: 10% 0 0 0;
 }
 
 .header-logo-image {
@@ -124,6 +143,7 @@ nav {
   text-align: center;
   font-weight: 300;
   font-size: 20px;
+  letter-spacing: 3px;
   color: white;
 }
 
@@ -136,7 +156,7 @@ nav {
   font-size: 18px;
   text-decoration: none;
   letter-spacing: 2px;
-  line-height: 46px;
+  line-height: 3;
   -webkit-box-shadow: 0px 15px 27px -3px rgba(0,180,122,0.7);
   -moz-box-shadow: 0px 15px 27px -3px rgba(0,180,122,0.7);
   box-shadow: 0px 15px 27px -3px rgba(0,180,122,0.7);
