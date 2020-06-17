@@ -43,13 +43,13 @@
 
         <div class='raffle-column'>
           <h4 class='light'>Buy a Raffle Ticket</h4>
-          <p>Enter our raffle draw for your chance to eat snacks and things!</p>
+          <p class='dark'>Enter our raffle draw for your chance to eat snacks and things!</p>
           <a href='#' id='raffle-button' class='button light sm-text'>Enter Now</a>
         </div>
 
         <div class='raffle-column center'>
           <h4 class='light'>Next Prize Draw</h4>
-          <p>Announced on Live Chat</p>
+          <p class='dark'>Announced on Live Chat</p>
           <span id='raffle-counter' class='light'>58:32</span>
           <div class='sm-text light'>
             <span class='counter-label'>Mins</span>
@@ -71,45 +71,31 @@
     <section id='stage-section'>
       <div id="stage-buttons">
         <h4 id='stage-button-header'>Swap between stages</h4>
-        <a href="#" class="button button-active stage-button light sm-text">Stage One</a>
-        <a href="#" class="button button-inactive stage-button light sm-text">Stage Two</a>
+        <a href="#" class="button button-active stage-button light small caps">Stage One</a>
+        <a href="#" class="button button-inactive stage-button light small caps">Stage Two</a>
       </div>
-      <div id="stage">
-        <div id="stage-nav">
-          <h4 id="stage-header" class='light'>Stage One</h4>
-          <span class="light small caps" id="playing-now-header"> | Playing Now: <span id='playing-now'>The Wozzles 15:00 - 16:30</span></span>
-          <span class="light small caps" id="up-next-header"> | Up Next: <span id='up-next'>Nick I Guess 17:00 - 17:30</span></span>
-          <a href="#" class="small light caps" id='view-schedule-button'>View Schedule</a>
-        </div>
 
-        <div class="stage-column">
-          <div class="video-container">
-            <video src="#"></video>
-          </div>
-        </div>
-
-        <div class='stage-column'>
-  
-          <div id="chat">
-            <div id="chat-history">
-              <div class="chat-post">
-                <div class="chat-avatar"></div>
-                <h5 class="chat-post-title">Optix Solutions</h5>
-                <span>Words</span>
-                <p class="chat-post-content">Words are cool and so is checking out our sponsors!</p>
-                <div class="sponsor-icon"></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        
+      <div id="stage-nav">
+        <h4 id="stage-header" class='light'>Stage One</h4>
+        <span class="light small caps" id="playing-now-header"> | Playing Now: <span id='playing-now'>The Wozzles 15:00 - 16:30</span></span>
+        <span class="light small caps" id="up-next-header"> | Up Next: <span id='up-next'>Nick I Guess 17:00 - 17:30</span></span>
+        <a href="#" class="small light caps" id='view-schedule-button'>View Schedule</a>
       </div>
+
+      <div class="stage-column">
+        <div class="video-container">Loading...</div>
+      </div>
+
+      <div class='stage-column'>
+        <div class="chat-container"></div>
+      </div>
+
     </section>
 
     <!-- * DELIVERY * -->
-    <section id='delivery-section'></section>
+    <section id='delivery-section'>
+      <div class="delivery"></div>
+    </section>
     
     <!-- * LINEUP * -->
     <section id='lineup-section'></section>
