@@ -1,20 +1,47 @@
 /******************************
  * Global
  */
-
+html {
+  font-size: 67.5%;
+  line-height: 1.15;
+}
 body {
-
+  font-family: 'Lato', sans-serif;
 }
 
 p {
 
 }
-
+a {
+  text-decoration: none;
+}
 .site-bg {
-
+  background: url(../assets/hero-image.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.site-donate {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  background: #01b47a;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+  border: none;
+  padding: 8px 25px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .section-wrapper {
-
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .heading {
 
@@ -35,59 +62,89 @@ p {
  * Site Header
  */
 .site-header {
-
+  background: #020c0e;
+  padding: 50px 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .site-logo {
-
+  background: transparent url(../assets/re4orm-nav-logo.png) no-repeat 0 0;
+  background-size: 100%;
+  display: block;
+  width: 172px;
+  height: 31px;
+  text-indent: -9999px;
 }
 .site-nav {
 
 }
 .site-nav__list {
-
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 .site-nav__list-item {
-
+  margin-left: 40px;
 }
 .site-nav__link {
-
+  color: #efefef;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 .site-nav__link.donate {
-
+  background-color: #01b47a;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 3px;
 }
 .site-nav__link.logout {
 
 }
-.site-donate {
 
-}
 
 
 /******************************
  * Hero
  */
 .section-wrapper.hero {
-
+  padding: 150px 0 50px;
+  text-align: center;
 }
 .hero-heading {
-
+  background: transparent url(../assets/re4orm-header-logo.png) no-repeat center top;
+  background-size: cover;
+  text-indent: -9999px;
+  width: 528px;
+  height: 204px;
+  margin: 0 auto;
 }
 .button-hero {
-
+  background: #01b47a;
+  border: none;
+  padding: 21px 28px;
+  font-size: 1.8rem;
+  color: #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
 /******************************
  * Welcome
  */
 
- .section-wrapper.welcome {
-
+.section-wrapper.welcome {
+  display: flex;
 }
 .section-column {
 
 }
 .section-column.raffle {
-
+  background-color: #01b47a;
+  padding: 28px;
 }
 .raffle-column {
 
@@ -253,7 +310,9 @@ p {
  */
 
 .site-footer {
-
+  background-color: #242b3b;
+  border-top: 5px solid #00b47a;
+  padding: 50px 0;
 }
 .footer-logo {
 
