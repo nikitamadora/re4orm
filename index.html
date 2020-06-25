@@ -43,14 +43,16 @@
       <div class="raffle-column buy">
         <h3 class="heading heading-lvl3 heading--light">Buy a Raffle Ticket</h3>
         <p>Enter our raffle draw for your chance to win some great prizes.</p>
-        <button type="button" class="button-raffle"></button>
+        <button type="button" class="button-raffle">Enter Now</button>
       </div>
       <div class="raffle-column countdown">
         <h3 class="heading heading-lvl3 heading--light">Next Prize Draw</h3>
         <p>Announced on Live Chat</p>
         <span class="time">58:32</span>
-        <sub>mins</sub>
-        <sub>secs</sub>
+        <span class="time-labels">
+          <span>mins</span>
+          <span>secs</span>
+        </span>
       </div>
     </div>
     <div class="section-column welcome-msg">
@@ -63,23 +65,24 @@
   <section id="Stages" class="section-wrapper stages">
     <h3 class="heading heading-lvl3 heading--dark">Swap between stages</h3>
     <div class="stage-select">
-      <button type="button" class="button-stage active">Stage One</button>
-      <button type="button" class="button-stage">Stage Two</button>
+      <button type="button" class="btn button-stage active">Stage One</button>
+      <button type="button" class="btn button-stage">Stage Two</button>
     </div>
-    <div class="stage-wrapper">
-      <div class="stage-header">
+    <div class="stage-header">
+      <div class="stage-details">
         <h4 class="stage-label">Stage One</h4>
-        <span class="stage-details">
+        <span class="stage-detail">
           <strong>Playing Now:</strong>
           <span>The Worzels, 12:00PM - 12:45PM</span>
         </span>
-        <span class="stage-details">
+        <span class="stage-detail">
           <strong>Up Next:</strong>
           <span>DJ Nick Watts, 12:45PM - 1:45PM</span>
         </span>
-        <a href="#Lineup" class="stage-schedule">View Schedule</a>
       </div>
-
+      <a href="#Lineup" class="stage-schedule">View Schedule</a>
+    </div>
+    <div class="stage-wrapper">
       <div class="stage-video"></div>
       <div class="stage-chat">tbd</div>
     </div>

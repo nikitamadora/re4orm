@@ -10,11 +10,26 @@ body {
 }
 
 p {
-
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #121212;
 }
 a {
   text-decoration: none;
 }
+.btn {
+  border: none;
+  padding: 1rem 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.btn-dark {
+  background: #333f59;
+}
+
 .site-bg {
   background: url(../assets/hero-image.png);
   position: absolute;
@@ -41,16 +56,19 @@ a {
 }
 .section-wrapper {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 auto 2.4rem;
 }
 .heading {
-
+  margin: 0;
 }
 .heading-lvl2 {
-
+  font-size: 3.5rem;
+  font-weight: 900;
 }
 .heading-lvl3 {
-
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1.6rem;
 }
 .heading--light  {
   color: #efefef;
@@ -63,7 +81,7 @@ a {
  */
 .site-header {
   background: #020c0e;
-  padding: 50px 0 25px;
+  padding: 40px 0 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -138,37 +156,71 @@ a {
 
 .section-wrapper.welcome {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .section-column {
 
 }
 .section-column.raffle {
   background-color: #01b47a;
-  padding: 28px;
+  padding: 28px 0;
+  flex-shrink: 0;
+  flex-basis: 40%;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 .raffle-column {
-
+  flex-basis: 50%;
+  padding: 0 24px;
 }
 .raffle-column.buy {
-
+  border-right: solid 1px #069a6a;
 }
 .raffle-column.countdown {
-
+  text-align: center;
+  border-left: 1px solid #10cc91;
 }
 .button-raffle {
-
+  width: 100%;
+  border: 0;
+  background: #242b3b;
+  border-radius: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 0;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .raffle-column p {
 
 }
-.countdown .time {
-
+.countdown p {
+  margin-bottom: 1rem;
 }
-.countdown sub {
-
+.countdown .time {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 300;
+  display: block;
+}
+.countdown .time-labels {
+  display: flex;
+  justify-content: space-around;
+}
+.time-labels > span {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .section-column.welcome-msg {
-
+  flex-basis: 54%;
+  padding-top: 100px;
+  padding-right: 1.6rem;
+  margin-top: 100px;
 }
 .heading--welcome {
 
@@ -184,50 +236,118 @@ a {
 
 }
 .button-stage {
-
+  background: #333f59;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
+  margin-right: 3px;
 }
 .button-stage.active {
-
+  background: #01b47a;
 }
 .stage-wrapper {
-
+  display: flex;
 }
 .stage-header {
-
+  background: #01b47a;
+  border-radius: 3px 3px 0 0;
+  padding: 0.8rem 1.6rem;
+  margin-top: 2.4rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .stage-label {
-
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-right: 1.6rem;
+  margin-right: 1.6rem;
+  border-right: 1px solid rgba(255,255,255,0.3);
 }
 .stage-details {
-
+  display: flex;
+  align-items: center;
+}
+.stage-detail {
+  padding-right: 1.6rem;
+  margin-right: 1.6rem;
+  letter-spacing: 2px;
+  border-right: 1px solid rgba(255,255,255,0.3);
+}
+.stage-detail:last-child {
+  border-right: none;
 }
 .stage-details strong {
-
+  font-weight: 700;
 }
 .stage-details span {
 
 }
 .stage-schedule {
-
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding-right: 28px;
 }
 .stage-video {
-
+  width: 890px;
+  height: 498px;
+  background-color: #333;
 }
 .stage-chat {
-
+  flex-grow: 1;
+  background-color: magenta;
 }
 
 /******************************
  * Food
  */
 .section-wrapper.food {
-
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 4.8rem 4.8rem 4.8rem 38.4rem;
+  background-color: #f9f8fd;
+  box-sizing: border-box;
+  position: relative;
+}
+.section-wrapper.food::before {
+  content: '';
+  background: url(../assets/coke.png) no-repeat 0 0;
+  background-size: 100%;
+  width: 110px;
+  height: 219px;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  z-index: 1;
+}
+.section-wrapper.food::after {
+  content: '';
+  background: url(../assets/burger.png) no-repeat 0 0;
+  background-size: 100%;
+  width: 339px;
+  height: 254px;
+  position: absolute;
+  z-index: 2;
+  left: 6%;
+  top: 30%;
 }
 .heading--food {
 
 }
 .ordernow {
-
+  background: url(../assets/justeat.png) no-repeat 0 0;
+  background-size: 100%;
+  width: 180px;
+  height: 94px;
+  display: block;
+  text-indent: -9999px;
 }
 
 /******************************
@@ -237,10 +357,10 @@ a {
 
 }
 .heading--lineup {
-
+  text-align: center;
 }
 .lineup-stages {
-
+  display: flex;
 }
 .lineup-stage {
 
