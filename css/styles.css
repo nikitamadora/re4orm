@@ -5,13 +5,32 @@
 body {
 
 }
+
+p {
+
+}
+
 .site-bg {
 
 }
 .section-wrapper {
 
 }
+.heading {
 
+}
+.heading-lvl2 {
+
+}
+.heading-lvl3 {
+
+}
+.heading--light  {
+  color: #efefef;
+}
+.heading--dark {
+  color: #111111;
+}
 /******************************
  * Site Header
  */
@@ -39,7 +58,215 @@ body {
 .site-nav__link.logout {
 
 }
+.site-donate {
+
+}
+
 
 /******************************
  * Hero
  */
+.section-wrapper.hero {
+
+}
+.hero-heading {
+
+}
+.button-hero {
+
+}
+
+/******************************
+ * Welcome
+ */
+
+ .section-wrapper.welcome {
+
+}
+.section-column {
+
+}
+.section-column.raffle {
+
+}
+.raffle-column {
+
+}
+.raffle-column.buy {
+
+}
+.raffle-column.countdown {
+
+}
+.button-raffle {
+
+}
+.raffle-column p {
+
+}
+.countdown .time {
+
+}
+.countdown sub {
+
+}
+.section-column.welcome-msg {
+
+}
+.heading--welcome {
+
+}
+
+/******************************
+ * Stages
+ */
+.section-wrapper.stages {
+
+}
+.stage-select {
+
+}
+.button-stage {
+
+}
+.button-stage.active {
+
+}
+.stage-wrapper {
+
+}
+.stage-header {
+
+}
+.stage-label {
+
+}
+.stage-details {
+
+}
+.stage-details strong {
+
+}
+.stage-details span {
+
+}
+.stage-schedule {
+
+}
+.stage-video {
+
+}
+.stage-chat {
+
+}
+
+/******************************
+ * Food
+ */
+.section-wrapper.food {
+
+}
+.heading--food {
+
+}
+.ordernow {
+
+}
+
+/******************************
+ * Lineup
+ */
+.section-wrapper.lineup {
+
+}
+.heading--lineup {
+
+}
+.lineup-stages {
+
+}
+.lineup-stage {
+
+}
+.lineup-stage--stage1 {
+
+}
+.lineup-stage--stage2 {
+
+}
+.lineup-heading {
+
+}
+.lineup-heading--stage1 {
+
+}
+.lineup-heading--stage2 {
+
+}
+
+.lineup-list {
+
+}
+.lineup-item {
+
+}
+.lineup-item p {
+
+}
+.lineup-item p {
+
+}
+.lineup-info {
+
+}
+.lineup-img {
+
+}
+.lineup-item-heading {
+
+}
+.lineup-tag {
+
+}
+.lineup-time {
+
+}
+.lineup-readmore {
+
+}
+
+/******************************
+ * Lineup
+ */
+.section-wrapper.sponsors {
+
+}
+.heading--sponsors {
+
+}
+.sponsors-list {
+
+}
+
+/******************************
+ * Site footer
+ */
+
+.site-footer {
+
+}
+.footer-logo {
+
+}
+.footer-text {
+
+}
+.footer-text a {
+
+}
+.footer-plug {
+
+}
+.footer-plug a {
+
+}
