@@ -4,122 +4,244 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel='stylesheet' href='css/normalize.css'>
-  <link rel='stylesheet' href='css/style.css'>
+  <link rel='stylesheet' href='css/styles.css'>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <script defer src='js/index.js'></script>
   <title>Re4orm Festival</title>
 </head>
 <body>
+  <div class="site-bg" aria-hidden="true"></div>
 
-  <!-- * BANNER & NAV * -->
-  <header>
-    <div class="container">
-      <nav>
-        <a href='#' class='nav-logo'>
-          <img src="/assets/re4orm-nav-logo.png" alt="Re4orm Logo">
-        </a>
-        <div id='nav-links'>
-          <a href='#' class='nav-link light caps'>Live Video Performances</a>
-          <a href='#' class='nav-link light caps'>The Line Up</a>
-          <a href='#' class='nav-link light caps'>Sponsors</a>
-          <a href='#' class='nav-link light caps black button button-active' id='nav-donate-button'>Donate</a>
-          <a href='#' class='nav-link light caps' id='login-button'>Logout</a>
-        </div>
-      </nav>
-
-      <div class='header-logo'>
-        <img src="/assets/re4orm-header-logo.png" alt="Re4orm Festival Logo" class='header-logo-image'>
-      </div>
-      <span id='hero-date' class='caps'>15th July, 12pm to 12am</span>
-      <a href='#' class='button button-active caps' id='watch-live-button'>Watch Live</a>
-    </div>
+  <header id="!" class="section-wrapper site-header">
+    <a href="#!" class="site-logo">
+      <img src="./assets/re4orm-logo.png" alt="RE4ORM" />
+    </a>
+    <nav class="site-nav">
+      <a href="#!" class="site-nav__toggle"><span class="sr-only">Open Menu</span>&#9776;</a>
+      <ul class="site-nav__list">
+        <li class="site-nav__list-item">
+          <a href="#Stages" class="site-nav__link">Live Video Performances</a>
+        </li>
+        <li class="site-nav__list-item">
+          <a href="#Lineup" class="site-nav__link">The Line Up</a>
+        </li>
+        <li class="site-nav__list-item">
+          <a href="#Sponsors" class="site-nav__link">Sponsors</a>
+        </li>
+        <li class="site-nav__list-item">
+          <a href="#!" class="site-nav__link donate">Donate</a>
+        </li>
+        <li class="site-nav__list-item">
+          <a href="#!" class="site-nav__link logout">Logout</a>
+        </li>
+      </ul>
+    </nav>
   </header>
-  
-  <div class='container'>
-    <!-- * WELCOME * -->
-    <section id="welcome-section">
-
-      <div id='raffle'>
-
-        <div class='raffle-column'>
-          <h4 class='light'>Buy a Raffle Ticket</h4>
-          <p>Enter our raffle draw for your chance to eat snacks and things!</p>
-          <a href='#' id='raffle-button' class='button light sm-text'>Enter Now</a>
-        </div>
-
-        <div class='raffle-column center'>
-          <h4 class='light'>Next Prize Draw</h4>
-          <p>Announced on Live Chat</p>
-          <span id='raffle-counter' class='light'>58:32</span>
-          <div class='sm-text light'>
-            <span class='counter-label'>Mins</span>
-            <span class='counter-label'>Secs</span>
-          </div>
-        </div>
-
+  <button class="site-donate" type="button">Donate</button>
+  <section class="section-wrapper hero">
+    <h1 class="hero-heading"><span>Re4orm Festival - </span>15th July, 12pm to 12am</h1>
+    <button type="button" class="button-hero">Watch Live</button>
+  </section>
+  <section class="section-wrapper welcome">
+    <div class="section-column raffle">
+      <div class="raffle-column buy">
+        <h3 class="heading heading-lvl3 heading--light">Buy a Raffle Ticket</h3>
+        <p>Enter our raffle draw for your chance to win some great prizes.</p>
+        <button type="button" class="button-raffle">Enter Now</button>
       </div>
-
-      <div id='welcome'>
-        <h2>Welcome</h2>
-        <h3>Two stages, amazing talent, a great day in.</h3>
-        <p>Gunwalls Privateer Davy Jones' Locker piracy deadlights dance the hempen jig walk the plank topsail clap of thunder driver. Provost avast lee fathom stern careen fluke crack Jennys tea cup six pounders lugsail. Loot Letter of Marque log Buccaneer ho Spanish Main mizzenmast pillage ahoy rutters.</p>
+      <div class="raffle-column countdown">
+        <h3 class="heading heading-lvl3 heading--light">Next Prize Draw</h3>
+        <p>Announced on Live Chat</p>
+        <span class="time">58:32</span>
+        <span class="time-labels">
+          <span>mins</span>
+          <span>secs</span>
+        </span>
       </div>
-
-    </section>
-
-    <!-- * STAGES * -->
-    <section id='stage-section'>
-      <div id="stage-buttons">
-        <h4 id='stage-button-header'>Swap between stages</h4>
-        <a href="#" class="button button-active stage-button light sm-text">Stage One</a>
-        <a href="#" class="button button-inactive stage-button light sm-text">Stage Two</a>
+    </div>
+    <div class="section-column welcome-msg">
+      <h2 class="heading heading-lvl2 heading--welcome">
+        Two stages, amazing talent, a great day in.
+      </h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint excepturi pariatur labore dignissimos quos perferendis corrupti libero facilis fuga quibusdam repudiandae praesentium vel, maiores autem iusto nam inventore? Explicabo, rerum.</p>
+    </div>
+  </section>
+  <section id="Stages" class="section-wrapper stages">
+    <h3 class="heading heading-lvl3 heading--dark">Swap between stages</h3>
+    <div class="stage-select">
+      <button type="button" class="btn button-stage active">Stage One</button>
+      <button type="button" class="btn button-stage">Stage Two</button>
+    </div>
+    <div class="stage-header">
+      <div class="stage-details">
+        <h4 class="stage-label">Stage One</h4>
+        <span class="stage-detail">
+          <strong>Playing Now:</strong>
+          <span>The Worzels, 12:00PM - 12:45PM</span>
+        </span>
+        <span class="stage-detail">
+          <strong>Up Next:</strong>
+          <span>DJ Nick Watts, 12:45PM - 1:45PM</span>
+        </span>
       </div>
-      <div id="stage">
-        <div id="stage-nav">
-          <h4 id="stage-header" class='light'>Stage One</h4>
-          <span class="light small caps" id="playing-now-header"> | Playing Now: <span id='playing-now'>The Wozzles 15:00 - 16:30</span></span>
-          <span class="light small caps" id="up-next-header"> | Up Next: <span id='up-next'>Nick I Guess 17:00 - 17:30</span></span>
-          <a href="#" class="small light caps" id='view-schedule-button'>View Schedule</a>
-        </div>
-
-        <div class="stage-column">
-          <div class="video-container">
-            <video src="#"></video>
-          </div>
-        </div>
-
-        <div class='stage-column'>
-  
-          <div id="chat">
-            <div id="chat-history">
-              <div class="chat-post">
-                <div class="chat-avatar"></div>
-                <h5 class="chat-post-title">Optix Solutions</h5>
-                <span>Words</span>
-                <p class="chat-post-content">Words are cool and so is checking out our sponsors!</p>
-                <div class="sponsor-icon"></div>
+      <a href="#Lineup" class="stage-schedule">View Schedule</a>
+    </div>
+    <div class="stage-wrapper">
+      <div class="stage-video">
+        <iframe src="https://player.vimeo.com/video/88619118?color=ffffff&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+      <div class="stage-chat">
+        <div class="chat-feed">
+          <ul class="chat-feed__list">
+            <li class="chat-item chat-item--sponsored">
+              <img src="" alt="optix" class="chat-item__image">
+              <div class="chat-item__content">
+                <h4 class="heading heading-lvl4 chat-item__heading">Optix Solutions</h4>
+                <span class="chat-item__timestamp">Today 13:38pm</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
-            </div>
+            </li>
+            <li class="chat-item">
+              <div class="chat-item__image">
+                <img src="" alt="optix">
+              </div>
+              <div class="chat-item__content">
+                <h4 class="heading heading-lvl4 chat-item__heading">Optix Solutions</h4>
+                <span class="chat-item__timestamp">Today 13:38pm</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="chat-item chat-item--sponsored">
+              <img src="" alt="optix" class="chat-item__image">
+              <div class="chat-item__content">
+                <h4 class="heading heading-lvl4 chat-item__heading">Optix Solutions</h4>
+                <span class="chat-item__timestamp">Today 13:38pm</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="chat-item">
+              <div class="chat-item__image">
+                <img src="" alt="optix">
+              </div>
+              <div class="chat-item__content">
+                <h4 class="heading heading-lvl4 chat-item__heading">Optix Solutions</h4>
+                <span class="chat-item__timestamp">Today 13:38pm</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="chat-input__wrapper">
+            <input type="text" class="chat-input" placeholder="Comment...">
+            <button type="button" class="chat-input__submit">Submit</button>
           </div>
-
         </div>
-
-        
       </div>
+    </div>
+  </section>
+
+  <section class="section-wrapper food">
+    <h2 class="heading heading-lvl2 heading--food">Food &amp; drink to your door</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim ut ex aperiam ipsa possimus atque placeat temporibus natus laborum tempore. Porro debitis aliquam animi, reiciendis quas distinctio unde rerum magnam.</p>
+    <a href="#!" class="ordernow">Order Now with Just Eat</a>
+  </section>
+
+  <section id="Lineup" class="section-wrapper lineup">
+    <h2 class="heading heading-lvl2 heading--lineup">Who, When, &amp; What Stage</h2>
+
+    <div class="mobile-only">
+      <h3 class="heading heading-lvl3 heading--dark">Swap between stages</h3>
+      <div class="stage-select">
+        <button type="button" class="btn button-stage active">Stage One</button>
+        <button type="button" class="btn button-stage">Stage Two</button>
+      </div>
+    </div>
+
+    <div class="lineup-stages">
+      <div class="lineup-stage lineup-stage--stage1 lineup-stage--active">
+        <h4 class="lineup-heading lineup-heading--stage1"><span><sup>Stage</sup>One</span></h4>
+        <ul class="lineup-list">
+          <li class="lineup-item">
+            <div class="lineup-info">
+              <img class="lineup-img" src="assets/band-01.png" alt="yes">
+              <h3 class="lineup-item-heading">Act Title</h3>
+              <span class="lineup-tag">Live Music</span>
+              <span class="lineup-time">12pm - 1pm</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo modi natus esse molestias similique consectetur sint porro voluptatibus deserunt? Dolores sint quo eius nam non dignissimos? Unde, qui accusantium!</p>
+            <a class="lineup-readmore" href="#!">Read more</a>
+          </li>
+          <li class="lineup-item">
+            <div class="lineup-info">
+              <img class="lineup-img" src="assets/band-02.png" alt="yes2">
+              <h3 class="lineup-item-heading">Act Title</h3>
+              <span class="lineup-tag lineup-tag--music">Live Music</span>
+              <span class="lineup-time">12pm - 1pm</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo modi natus esse molestias similique consectetur sint porro voluptatibus deserunt? Dolores sint quo eius nam non dignissimos? Unde, qui accusantium!</p>
+            <a class="lineup-readmore" href="#!">Read more</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lineup-stage lineup-stage--stage2">
+        <h4 class="lineup-heading lineup-heading--stage2"><span><sup>Stage</sup>Two</span></h4>
+        <ul class="lineup-list">
+          <li class="lineup-item">
+            <div class="lineup-info">
+              <img class="lineup-img" src="assets/band-03.png" alt="yes3">
+              <h3 class="lineup-item-heading">Act Title</h3>
+              <span class="lineup-tag">Comedy</span>
+              <span class="lineup-time">12pm - 1pm</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo modi natus esse molestias similique consectetur sint porro voluptatibus deserunt? Dolores sint quo eius nam non dignissimos? Unde, qui accusantium!</p>
+            <a class="lineup-readmore" href="#!">Read more</a>
+          </li>
+          <li class="lineup-item">
+            <div class="lineup-info">
+              <img class="lineup-img" src="assets/band-04.png" alt="yes4">
+              <h3 class="lineup-item-heading">Act Title</h3>
+              <span class="lineup-tag lineup-tag--music">Live Music</span>
+              <span class="lineup-time">12pm - 1pm</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo modi natus esse molestias similique consectetur sint porro voluptatibus deserunt? Dolores sint quo eius nam non dignissimos? Unde, qui accusantium!</p>
+            <a class="lineup-readmore" href="#!">Read more</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="Sponsors" class="section-wrapper sponsors">
+    <h2 class="heading heading-lvl2 heading--sponsors">Supporting Us</h2>
+    <ul class="sponsors-list">
+      <li class="sponsors-list__item">
+        <img src="assets/fedex.png" alt="fedex">
+      </li>
+      <li class="sponsors-list__item">
+        <img src="assets/adidas.png" alt="adidas">
+      </li>
+      <li class="sponsors-list__item">
+        <img src="assets/ember.png" alt="ember">
+      </li>
+      <li class="sponsors-list__item">
+        <img src="assets/cisco.png" alt="cisco">
+      </li>
+      <li class="sponsors-list__item">
+        <img src="assets/heineken.png" alt="heineken">
+      </li>
+      <li class="sponsors-list__item">
+        <img src="assets/intel.png" alt="intel">
+      </li>
+    </ul>
+
+  </section>
+  <footer class="site-footer">
+    <section class="section-wrapper footer">
+      <span class="footer__text">
+        <img src="assets/re4orm-logo.png" alt="" class="footer__logo">
+        <span>&copy; Copyright 2020. All Rights Reserved. <a href="#!">Privacy Policy</a></span>
+      </span>
+      <span class="footer__plug">Designed By <a href="#!">OPTIX SOLUTIONS</a></span>
     </section>
-
-    <!-- * DELIVERY * -->
-    <section id='delivery-section'></section>
-    
-    <!-- * LINEUP * -->
-    <section id='lineup-section'></section>
-
-  </div> <!-- End Container -->
-  
-  <!-- * SPONSORS * -->
-  <section id='sponsors-section'></section>
-  
-  <!-- * FOOTER * -->
-  <footer></footer>
+  </footer>
 </body>
 </html>
