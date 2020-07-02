@@ -11,10 +11,13 @@
 </head>
 <body>
   <div class="site-bg" aria-hidden="true"></div>
-  <button class="site-donate" type="button">Donate</button>
+
   <header id="!" class="section-wrapper site-header">
-    <a href="#!" class="site-logo">RE4ORM</a>
+    <a href="#!" class="site-logo">
+      <img src="./assets/re4orm-logo.png" alt="RE4ORM" />
+    </a>
     <nav class="site-nav">
+      <a href="#!" class="site-nav__toggle"><span class="sr-only">Open Menu</span>&#9776;</a>
       <ul class="site-nav__list">
         <li class="site-nav__list-item">
           <a href="#Stages" class="site-nav__link">Live Video Performances</a>
@@ -34,8 +37,9 @@
       </ul>
     </nav>
   </header>
+  <button class="site-donate" type="button">Donate</button>
   <section class="section-wrapper hero">
-    <h1 class="hero-heading">Re4orm Festival - 15th July, 12pm to 12am</h1>
+    <h1 class="hero-heading"><span>Re4orm Festival - </span>15th July, 12pm to 12am</h1>
     <button type="button" class="button-hero">Watch Live</button>
   </section>
   <section class="section-wrapper welcome">
@@ -84,7 +88,7 @@
     </div>
     <div class="stage-wrapper">
       <div class="stage-video">
-        <iframe src="https://player.vimeo.com/video/88619118?color=ffffff&title=0&byline=0&portrait=0" width="886" height="498" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/88619118?color=ffffff&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
       <div class="stage-chat">
         <div class="chat-feed">
@@ -125,10 +129,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
             </li>
-
-
           </ul>
-
           <div class="chat-input__wrapper">
             <input type="text" class="chat-input" placeholder="Comment...">
             <button type="button" class="chat-input__submit">Submit</button>
@@ -146,8 +147,17 @@
 
   <section id="Lineup" class="section-wrapper lineup">
     <h2 class="heading heading-lvl2 heading--lineup">Who, When, &amp; What Stage</h2>
+
+    <div class="mobile-only">
+      <h3 class="heading heading-lvl3 heading--dark">Swap between stages</h3>
+      <div class="stage-select">
+        <button type="button" class="btn button-stage active">Stage One</button>
+        <button type="button" class="btn button-stage">Stage Two</button>
+      </div>
+    </div>
+
     <div class="lineup-stages">
-      <div class="lineup-stage lineup-stage--stage1">
+      <div class="lineup-stage lineup-stage--stage1 lineup-stage--active">
         <h4 class="lineup-heading lineup-heading--stage1"><span><sup>Stage</sup>One</span></h4>
         <ul class="lineup-list">
           <li class="lineup-item">
@@ -228,7 +238,8 @@
     <section class="section-wrapper footer">
       <span class="footer__text">
         <img src="assets/re4orm-logo.png" alt="" class="footer__logo">
-        &copy; Copyright 2020. All Rights Reserved. <a href="#!">Privacy Policy</a></span>
+        <span>&copy; Copyright 2020. All Rights Reserved. <a href="#!">Privacy Policy</a></span>
+      </span>
       <span class="footer__plug">Designed By <a href="#!">OPTIX SOLUTIONS</a></span>
     </section>
   </footer>
