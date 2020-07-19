@@ -52,11 +52,15 @@
       <div class="raffle-column countdown">
         <h3 class="heading heading-lvl3 heading--light">Next Prize Draw</h3>
         <p>Announced on Live Chat</p>
-        <span class="time">58:32</span>
-        <span class="time-labels">
-          <span>mins</span>
-          <span>secs</span>
-        </span>
+        <div class="countdown__timer">
+          <span class="countdown__label">
+            <span class="countdown__number countdown__number--min">58</span>
+          </span>
+          <span class="countdown__divider">:</span>
+          <span class="countdown__label">
+            <span class="countdown__number countdown__number--sec">32</span>
+          </span>
+        </div>
       </div>
     </div>
     <div class="section-column welcome-msg">
@@ -94,7 +98,9 @@
         <div class="chat-feed">
           <ul class="chat-feed__list">
             <li class="chat-item chat-item--sponsored">
-              <img src="" alt="optix" class="chat-item__image">
+              <div class="chat-item__image">
+                <img src="./assets/box-green.png" alt="optix">
+              </div>
               <div class="chat-item__content">
                 <h4 class="heading heading-lvl4 chat-item__heading">Optix Solutions</h4>
                 <span class="chat-item__timestamp">Today 13:38pm</span>
@@ -103,7 +109,7 @@
             </li>
             <li class="chat-item">
               <div class="chat-item__image">
-                <img src="" alt="optix">
+                <img src="./assets/box-red.png" alt="optix">
               </div>
               <div class="chat-item__content">
                 <h4 class="heading heading-lvl4 chat-item__heading">Optix Solutions</h4>
@@ -112,7 +118,9 @@
               </div>
             </li>
             <li class="chat-item chat-item--sponsored">
-              <img src="" alt="optix" class="chat-item__image">
+              <div class="chat-item__image">
+                <img src="./assets/box-green.png" alt="optix">
+              </div>
               <div class="chat-item__content">
                 <h4 class="heading heading-lvl4 chat-item__heading">Optix Solutions</h4>
                 <span class="chat-item__timestamp">Today 13:38pm</span>
@@ -121,7 +129,7 @@
             </li>
             <li class="chat-item">
               <div class="chat-item__image">
-                <img src="" alt="optix">
+                <img src="./assets/box-red.png" alt="optix">
               </div>
               <div class="chat-item__content">
                 <h4 class="heading heading-lvl4 chat-item__heading">Optix Solutions</h4>
@@ -243,5 +251,62 @@
       <span class="footer__plug">Designed By <a href="#!">OPTIX SOLUTIONS</a></span>
     </section>
   </footer>
+
+  <div class="modal__overlay">
+    <div class="modal">
+      <h2 class="heading heading-lvl2 heading--donate">Every little helps</h2>
+
+      <form action="" class="form">
+
+        <div class="form__field">
+          <label class="form__label--text">
+            <span class="form__label-text">Name</span>
+            <input type="text" class="form__input" placeholder="Name">
+          </label>
+        </div>
+
+        <div class="form__field">
+          <label class="form__label--text">
+            <span class="form__label-text">Email</span>
+            <input type="email" class="form__input" placeholder="Email">
+          </label>
+        </div>
+
+        <p>Quick Donation</p>
+        <div class="form__field--radio-btns">
+          <label class="form__label--radio">
+            $5.00
+            <input class="form__input-radio" type="radio" name="quick_donation" value="$5.00">
+          </label>
+          <label class="form__label--radio">
+            $10.00
+            <input class="form__input-radio" type="radio" name="quick_donation" value="$10.00">
+          </label>
+          <label class="form__label--radio">
+            $20.00
+            <input class="form__input-radio" type="radio" name="quick_donation" value="$20.00">
+          </label>
+        </div>
+
+        <div class="form__field form__field--slider">
+          <label class="form__label-range" for="formRange">Slide to adjust amount</label>
+          <input type="range" id="formRange" class="form__input--range" value="42" min="5" max="500">
+          <input type="text" class="form__input--readonly" readonly value="$42.00">
+        </div>
+
+        <div class="form__field form__field--spaced">
+          <label class="form__label-checkbox">
+            <input type="checkbox" class="form__input--checkbox" checked>
+            Please share my donation on the live chat.
+          </label>
+        </div>
+
+        <div class="form__field form__field--centered">
+          <button type="submit" class="form__submit">Submit Donation</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
 </body>
 </html>

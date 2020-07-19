@@ -4,11 +4,20 @@
 html {
   font-size: 67.5%;
   line-height: 1.15;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 body {
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  position: relative;
 }
-
+.page-login {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 p {
   font-size: 1.4rem;
   line-height: 2;
@@ -47,9 +56,19 @@ button {
 .btn-dark {
   background: #333f59;
 }
-
-.site-bg {
-  background: #050f11 url(../assets/hero-image.png) no-repeat center 50px ;
+.site-bg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 1000%;
+  height: 760px;
+  z-index: -2;
+  background: #000;
+}
+.site-bg:after {
+  content: '';
+  background: #000 url(../assets/hero-image.png) no-repeat center 50px ;
   position: absolute;
   left: 50%;
   top: 0;
@@ -61,11 +80,7 @@ button {
   z-index: -1;
   box-shadow: inset 0px 0px 147px 86px rgba(0,0,0,0.94);
 }
-@media (max-width: 1600px) {
-  /* .site-bg {
-    width: 100%;
-  } */
-}
+
 .site-donate {
   position: fixed;
   right: 0;
@@ -74,10 +89,11 @@ button {
   transform: rotate(-90deg);
   transform-origin: right bottom;
   border: none;
-  padding: 8px 25px;
+  padding: 10px 30px;
   color: #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
+  border-radius: 3px;
 }
 .section-wrapper {
   max-width: 1400px;
@@ -214,7 +230,7 @@ button {
 }
 .raffle-column {
   flex-basis: 50%;
-  padding: 0 24px;
+  padding: 0 30px;
 }
 .raffle-column.buy {
   border-right: solid 1px #069a6a;
@@ -244,22 +260,46 @@ button {
 .countdown p {
   margin-bottom: 1rem;
 }
-.countdown .time {
+
+.countdown__timer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.countdown__label {
+
+}
+.countdown__number {
   color: #fff;
   font-size: 6rem;
   font-weight: 300;
-  display: block;
 }
-.countdown .time-labels {
-  display: flex;
-  justify-content: space-around;
+.countdown__divider {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 300;
+  margin-top: -0.5rem;
+  padding: 0 0.5rem;
 }
-.time-labels > span {
+.countdown__number::after {
   color: #fff;
   text-transform: uppercase;
+  display: block;
   font-size: 1rem;
   font-weight: 700;
 }
+.countdown__number--min::after {
+  content: 'mins';
+}
+.countdown__number--sec::after {
+  content: 'secs';
+
+}
+.countdown__divider {
+
+}
+
+
 .section-column.welcome-msg {
   flex-basis: 54%;
   padding-top: 100px;
@@ -388,6 +428,8 @@ button {
   margin-right: 1.6rem;
   background-color: #00b47a;
   padding: 8px;
+  max-width: 50px;
+  max-height: 50px;
 }
 .chat-item__image img {
   max-width: 100%;
@@ -720,8 +762,161 @@ button {
 
 }
 
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  z-index: 999;
+}
+.modal {
+  max-width: 600px;
+  background: rgba(255,255,255,0.105);
+  padding: 5rem 10rem;
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 9999;
+  left: 50%;
+  top: 5rem;
+  transform: translate(-50%, 0);
+  position: absolute;
+  border-radius: 3px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.modal p {
+  color: #efefef;
+  margin-top: 0;
+}
+.heading--donate {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.form {
 
+}
+.form__field {
+  padding: 10px 0;
+}
+.form__field--spaced {
+  padding: 3rem 5rem;
+}
+.form__field--slider {
+  border-bottom: 1px solid #707070;
+}
+.form__field--centered {
+  display: flex;
+  justify-content: center;
+}
+[class^="form__label"] {
 
+}
+.form__label {
+
+}
+.form__label-text {
+  opacity: 0;
+  position: absolute;
+}
+.form__input {
+  width: 100%;
+  background: #434446;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #fff;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+.form__field--radio-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.form__label--radio {
+  border: 1px solid #01b47a;
+  border-radius: 3px;
+  padding: 1.4rem 0;
+  flex-basis: 30%;
+  cursor: pointer;
+  color: #01b47a;
+  text-align: center;
+}
+.form__label--radio:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+.form__label--radio + .form__label--radio {
+  margin-left: 1rem;
+}
+.form__input-radio {
+  position: absolute;
+  opacity: 0;
+}
+.form__label-range {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+.form__input--range {
+  width: 90%;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.form__input--readonly {
+  border: 0;
+  padding: 1.4rem;
+  margin: 3rem auto;
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 1;
+  display: block;
+  width: 40%;
+  background: #434446;
+  color: #01b47a;
+  text-align: center;
+  border-radius: 3px;
+}
+.form__label-checkbox {
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.form__input--checkbox {
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+
+.form__submit {
+  background: #01b47a;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 3px;
+  padding: 1.4rem;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+/********************************************************
+ * Mobile/Responsive Styles
+ */
+@media only screen and (max-width: 1400px) {
+  .site-bg:after {
+    width: 100%;
+  }
+  .site-bg:before {
+    display: none;
+  }
+}
 /* hidden hamburger menu, mobile only */
 .site-nav__toggle {
   display: none;
@@ -738,7 +933,7 @@ button {
   p {
     line-height: 1.75;
   }
-  .site-bg {
+  .site-bg:after {
     height: 100%;
     background-size: cover;
     background-position: 83% 1rem;
@@ -835,7 +1030,7 @@ button {
   .stage-select {
     display: flex;
     justify-content: space-around;
-    padding: 28px;
+    padding: 0 3rem;
   }
   .button-stage {
     flex-grow: 1;
@@ -859,7 +1054,14 @@ button {
   .hero-heading {
     background-size: 100%;
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 20rem;
+    padding-top: 12rem;
+  }
+  .page-login .hero-heading {
+    margin-top: 2rem;
+  }
+  .page-login .hero--login {
+    margin-top: 0;
   }
   .stage-schedule {
     padding: 28px;
@@ -940,4 +1142,67 @@ button {
     display: block;
     padding: 2rem 0;
   }
+
+
+  .modal {
+    width: 100%;
+    padding: 1rem;
+  }
+  .hero--login {
+    width: 100%;
+  }
+} /* End mobile*/
+
+
+
+/**
+ *
+ * Login
+ */
+.page-login {
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+}
+.site-bg--login:after {
+  height: 100%;
+}
+.hero--login {
+  max-width: 600px;
+  padding: 5rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 5rem auto 0;
+  text-align: center;
+}
+.hero--login::before {
+  content: '';
+  display: block;
+  background: #000;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.hero--login p {
+  color: #fff;
+}
+
+.hero--login hr {
+  border-top: 0;
+  border-color: #5b666c;
+  width: 100%;
+  margin: 3rem 0;
+}
+.hero--login .heading-lvl3 {
+  color: #fff;
+}
+.facebook-button-wrapper {
+
+}
+.fb-login-button {
+  text-align: center;
 }
